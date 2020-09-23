@@ -8,6 +8,19 @@ Thanks to [Evghenii Marinescu](https://github.com/MarinescuEvghenii "Evghenii Ma
 
 ## Setup the Module
 
+### Install the module
+
+In your MagicMirror directory:
+
+```bash
+cd modules
+git clone https://github.com/raywo/MMM-NowPlayingOnSpotify.git
+cd MMM-NowPlayingOnSpotify
+npm install
+```
+
+### Configure the module
+
 Config | Description
 --- | ---
 `updateType` | Possible Values are `polling`, `push`. Push works only for MagicMirror 2.8+ because this Version has a Broadcast built in. Please make sure your newsfeed moduel has broadcastNewsFeeds activated.<br />**Default Value:** `push`
@@ -22,6 +35,7 @@ Config | Description
 ```javascript
 {
     module: 'MMM-News-QR',
+    position: "bottom_bar",
     config: {
         // possible values (polling, push)
         // push only works with MagicMirror 2.8+ and broadcastNewsFeeds activated
